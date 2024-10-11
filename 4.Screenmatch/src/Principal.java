@@ -1,4 +1,5 @@
 import br.com.alura.screenmatech.modelos.Filme;
+import br.com.alura.screenmatech.modelos.Serie;
 
 import java.util.Locale;
 
@@ -17,9 +18,13 @@ public class Principal {
         filme.avalia(8.0);
         filme.avalia(10.0);
         filme.avalia(5.0);
-        System.out.println("Total de avalições: " + filme.getTotalDeAvaliacoes());
-        //System.out.println(filme.somaAvaliacoes);
-        //System.out.println(filme.getTotalDeAvaliacoes);
+        System.out.println("Total de avaliações: " + filme.getTotalDeAvaliacoes());
         System.out.printf("%.1f%n", filme.retornaMedia());
+
+        Serie lost = new Serie();
+
+        lost.setNome("Lost");
+        lost.setAnoDeLancamento(2000);
+        lost.exibeFichaTecnica();
     }
 }
